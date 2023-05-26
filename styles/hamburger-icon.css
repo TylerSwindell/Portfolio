@@ -1,0 +1,24 @@
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  visibility: visible;
+  width: 60px;
+  height: 35px;
+}
+
+.hb-line {
+  border: 3px solid var(--dark-sf);
+  background-color: var(--dark-sf);
+  border-radius: 3px;
+  width: 100%;
+}
+
+.hb-line:nth-of-type(2) {
+  width: 90%;
+}
+
+.hb-line:nth-of-type(3) {
+  width: 55%;
+}

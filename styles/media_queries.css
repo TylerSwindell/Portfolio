@@ -1,0 +1,53 @@
+@media screen and (max-width: 576px) {
+  /* CSS rules for small screens */
+  body > div.container {
+    padding: 2rem;
+    background: url("/imgs/bg.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+  }
+
+  header {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /* CSS rules for medium screens */
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /* CSS rules for large screens */
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  /* CSS rules for extra-large screens */
+}
+
+@media screen and (min-width: 1201px) {
+  /* CSS rules for extra-extra-large screens */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  /* CSS rules for retina displays */
+}
+
+@media screen and (orientation: landscape) {
+  /* CSS rules for landscape orientation */
+}
+
+@media screen and (orientation: portrait) {
+  /* CSS rules for portrait orientation */
+}
+
+@media print {
+  /* CSS rules for printing */
+}

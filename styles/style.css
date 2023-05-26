@@ -1,0 +1,145 @@
+/* Section Styling */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+section#skills > div.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--section-color);
+  border-radius: 10px;
+  padding: 30px 30px 0;
+  box-shadow: var(--backdrop);
+}
+
+div.content > p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+div.content > h4,
+div.content > h3 {
+  text-align: center;
+}
+
+/* Custom Element Styling */
+
+hr {
+  width: 12%;
+  border: 2px solid var(--dark-sf);
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.portfolio-image {
+  width: var(--pfolio-img);
+  height: var(--pfolio-img);
+  border-radius: 50%;
+  border: 10px solid var(--dark-sf);
+  background-image: url("/imgs/me_500x500.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.dark-seafoam-filter {
+  filter: invert(50%) sepia(100%) saturate(335%) hue-rotate(122deg)
+    brightness(95%) contrast(89%);
+}
+
+.md-icon,
+.lg-icon {
+  margin-bottom: 10px;
+}
+
+.sm-icon {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+.md-icon {
+  width: 55px;
+  height: 55px;
+}
+
+.lg-icon {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 10px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item {
+  background-color: var(--section-color);
+  padding: 15px;
+  min-height: 250px;
+  height: 250px;
+  margin-bottom: 35px;
+  border-radius: 12px;
+  box-shadow: var(--backdrop);
+}
+
+.project-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: rgb(42, 42, 42);
+  padding: 10px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.project-item-content > p {
+  color: white;
+  padding: 0 10px 10px;
+  font-size: var(--sm-text-size);
+  font-weight: var(--medium-text-weight);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  width: 25%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+footer > nav {
+  width: 75%;
+  margin-bottom: 25px;
+}
+
+footer > p.copyright {
+  text-align: center;
+  font-weight: var(--medium-text-weight);
+  font-size: 14px;
+}
+
+footer > nav > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer > nav > ul > li {
+  list-style-type: none;
+}
+
+footer > nav > ul > li > a,
+footer > nav > ul > li > a:visited {
+  color: var(--dark-sf);
+  font-weight: 400;
+}
