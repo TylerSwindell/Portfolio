@@ -2,7 +2,7 @@
   /* CSS rules for small screens */
   body > div.container {
     padding: 2rem;
-    background: url("../assets/bg.svg");
+    background: url("assets/bg.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
