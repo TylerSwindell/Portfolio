@@ -29,10 +29,6 @@ html {
   font-size: var(--md-text-size);
 }
 
-body {
-  overflow: hidden;
-}
-
 header {
   margin-bottom: 25px;
 }

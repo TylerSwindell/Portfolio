@@ -22,7 +22,6 @@ const toggleOverlay = () => {
 const toggleNav = () => {
   toggleOverlay();
   if (expandedNav.classList.contains("hidden")) {
-    console.log(window.scrollY);
     expandedNav.style.marginTop = `${window.scrollY}px`;
     expandedNav.classList.add("visible");
     expandedNav.classList.remove("hidden");
