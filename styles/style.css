@@ -36,10 +36,10 @@ section#skills > div.content {
 #expanded-nav {
   position: absolute;
   display: flex;
-  align-items: end;
+  align-items: start;
   justify-content: center;
   padding: 5rem 0;
-  height: 100vh;
+  height: 150vh;
   top: 0;
   right: 0;
   background-color: var(--darker-sf);
@@ -49,7 +49,8 @@ section#skills > div.content {
 }
 
 #expanded-nav > ul {
-  height: 80%;
+  height: 80vh;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
