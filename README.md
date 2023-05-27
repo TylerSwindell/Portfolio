@@ -1,6 +1,8 @@
 # Personal Portfolio
 
-Portfolio website built using no templates or frameworks.
+Hello! My name is Tyler Swindell. Thank you for visiting my portfolio GitHub repo!
+
+Visit my [portfolio](https://tylerswindell.github.io/Portfolio/) website, built using no templates or frameworks!
 
 I built this porfolio website to showcase my technical and web design skills.
 
