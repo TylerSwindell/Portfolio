@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: end;
-  visibility: visible;
   width: 60px;
   height: 35px;
 }
@@ -21,4 +20,32 @@
 
 .hb-line:nth-of-type(3) {
   width: 55%;
+}
+
+.exit-icon {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 20px 0 0;
+  width: 90px;
+  height: 60px;
+}
+
+.x-line {
+  position: absolute;
+  border: 3px solid var(--light-sf);
+  background-color: var(--light-sf);
+  border-radius: 3px;
+  width: 100%;
+}
+
+.x-line:nth-of-type(1) {
+  transform: rotate(60deg);
+  width: 60%;
+}
+
+.x-line:nth-of-type(2) {
+  transform: rotate(160deg);
 }

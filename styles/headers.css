@@ -1,6 +1,7 @@
 :root {
-  --dark-sf: #22b19d;
   --darker-sf: #033830;
+  --dark-sf: #22b19d;
+  --light-sf: #e0f6f8;
   --section-color: #e4f5f8;
   --pfolio-img: 190px;
   --sm-text-size: 14px;

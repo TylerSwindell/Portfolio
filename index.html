@@ -14,10 +14,14 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/hamburger-icon.css">
 		<link rel="stylesheet" href="styles/media_queries.css">
+
+    <script src="index.js" defer></script>
+
     <title>Tyler Swindell. Design.</title>
   </head>
 
   <body>
+    <div id="modal-overlay" class="hidden"></div>
     <div class="container">
       <!-- HEADER SECTION -->
       <header>
@@ -26,7 +30,30 @@
           <span class="hb-line"></span>
           <span class="hb-line"></span>
         </div>
-        <nav></nav>
+        <nav id="expanded-nav" class="hidden">
+          <div class="exit-icon">
+            <span class="x-line"></span>
+            <span class="x-line"></span>
+          </div>
+          <ul>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1r-IbdGEfM7BWJ0M3MJRPI-Jadw0l2lzT/view"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li><a id="about-nav" href="#about">About</a></li>
+            <li><a id="projects-nav" href="#projects">Projects</a></li>
+            <li>
+              <a
+                href="mailto:tyler.swindell.design@gmail.com"
+                target="_blank"
+              >Write Me!</a
+            >
+            </li>
+          </ul>
+        </nav>
       </header>
       <!-- END HEADER SECTION -->
 
@@ -150,6 +177,7 @@
             <li>
               <a
                 href="https://drive.google.com/file/d/1r-IbdGEfM7BWJ0M3MJRPI-Jadw0l2lzT/view"
+                target="_blank"
                 >Resume</a
               >
             </li>
@@ -159,11 +187,11 @@
         </nav>
         <p class="copyright dark-sf" name="copyright">Copyright &copy 2023 Tyler Swindell <br> All Rights Reserved</p>
         <div class="social-icons">
-          <a href="https://github.com/tylerswindell">
+          <a href="https://github.com/tylerswindell" target="_blank">
             <img class="sm-icon dark-seafoam-filter" src="assets/github-svgrepo-com.svg" alt="GitHub Logo Icon">
           </a>
 
-          <a href="https://www.linkedin.com/in/tylerswindell/">
+          <a href="https://www.linkedin.com/in/tylerswindell/" target="_blank">
             <img class="sm-icon dark-seafoam-filter" src="assets/linkedin-round-svgrepo-com.svg" alt="LinkedIn Logo Icon">
           </a>
         </div>
