@@ -17,7 +17,7 @@ section#skills > div.content {
 }
 
 #modal-overlay {
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
   position: absolute;
   background-color: var(--dark-sf);
