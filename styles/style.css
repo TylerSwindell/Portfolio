@@ -40,7 +40,7 @@ hr {
   height: var(--pfolio-img);
   border-radius: 50%;
   border: 10px solid var(--dark-sf);
-  background-image: url("assets/imgs/me_500x500.png");
+  background-image: url("/assets/imgs/me_500x500.png");
   background-position: center;
   background-size: cover;
 }
