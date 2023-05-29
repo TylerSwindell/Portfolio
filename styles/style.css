@@ -1,9 +1,10 @@
 /* Section Styling */
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+section,
+section#projects > div.content {
+  display: grid;
+  place-items: center;
   margin-bottom: 75px;
+  gap: 2rem;
 }
 
 section#skills > div.content {
@@ -16,71 +17,9 @@ section#skills > div.content {
   box-shadow: var(--backdrop);
 }
 
-#modal-overlay {
-  height: 300vh;
-  width: 100vw;
-  position: fixed;
-  background-color: var(--dark-sf);
-  opacity: 0%;
-  z-index: 99;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.visible {
-  visibility: visible;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-#modal-overlay.show {
-  opacity: 30%;
-}
-
-#modal-overlay.hide {
-  opacity: 0%;
-}
-
-#mobile-nav {
-  position: fixed;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  padding: 5rem 0;
-  height: 300vh;
-  top: 0;
-  background-color: var(--darker-sf);
-  box-shadow: -4px 3px 7px rgba(0, 0, 0, 0.16);
-  width: 60vw;
-  z-index: 100;
-  right: 0;
-  left: 40vw;
-  transition: left 0.3s ease-in;
-}
-
-#mobile-nav.closed-nav {
-  right: 0;
-  left: 100vw;
-}
-
-#mobile-nav > ul {
-  height: 60vh;
-  margin-top: 10vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#mobile-nav > ul > li {
-  list-style: none;
-}
-
-#mobile-nav > ul > li > a {
-  font-weight: var(--medium-text-weight);
-  font-size: var(--lg-text-size);
-  color: var(--light-sf);
+div.section-header {
+  display: grid;
+  place-items: center;
 }
 
 div.content > p {
@@ -117,39 +56,11 @@ hr {
     brightness(95%) contrast(89%);
 }
 
-.md-icon,
-.lg-icon {
-  margin-bottom: 10px;
-}
-
-.sm-icon {
-  width: 25px;
-  height: 25px;
-  margin: 10px;
-}
-
-.md-icon {
-  width: 55px;
-  height: 55px;
-}
-
-.lg-icon {
-  width: 75px;
-  height: 75px;
-  margin-bottom: 10px;
-}
-
-.project-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .project-item {
   background-color: var(--section-color);
   padding: 15px;
   min-height: 250px;
   height: 250px;
-  margin-bottom: 35px;
   border-radius: 12px;
   box-shadow: var(--backdrop);
 }

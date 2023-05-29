@@ -1,0 +1,71 @@
+#mobile-nav {
+  position: fixed;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 5rem 0;
+  height: 100vh;
+  top: 0;
+  background-color: var(--darker-sf);
+  box-shadow: -4px 3px 7px rgba(0, 0, 0, 0.16);
+  width: 60vw;
+  z-index: 100;
+  right: 0;
+  left: 40vw;
+  transition: left 0.3s cubic-bezier(0.94, 0.01, 0.58, 0.97);
+}
+
+#mobile-nav.closed-nav {
+  right: 0;
+  left: 100vw;
+}
+
+#mobile-nav > ul {
+  height: 60vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#mobile-nav > ul > li {
+  list-style: none;
+}
+
+#mobile-nav > ul > li > a {
+  font-weight: var(--medium-text-weight);
+  font-size: var(--lg-text-size);
+  color: var(--light-sf);
+}
+
+#mobile-nav > ul > li > a:active {
+  color: var(--dark-sf);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#mobile-nav > ul > li:nth-of-type(4) > a {
+  font-size: var(--medium-text-weight);
+  background-color: var(--dark-sf);
+  padding: 0.75rem 2rem;
+  border-radius: 2px;
+}
+
+.wave {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+}
+
+.wave:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--light-sf);
+  clip-path: url(#waveClip);
+  z-index: -1;
+}

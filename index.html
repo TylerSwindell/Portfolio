@@ -13,11 +13,13 @@
 		<link rel="stylesheet" href="styles/headers.css">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/hamburger-icon.css">
-		<link rel="stylesheet" href="styles/media_queries.css">
+		<link rel="stylesheet" href="styles/media-queries.css">
+		<link rel="stylesheet" href="styles/mobile-nav.css">
 
     <script src="index.js" defer></script>
 
     <title>Tyler Swindell. Design.</title>
+
   </head>
 
   <body>
@@ -30,7 +32,7 @@
           <span class="hb-line"></span>
           <span class="hb-line"></span>
         </div>
-        <nav id="mobile-nav" class="side-nav closed-nav">
+        <nav id="mobile-nav" class="closed-nav">
           <div class="exit-icon">
             <span class="x-line"></span>
             <span class="x-line"></span>
@@ -74,9 +76,11 @@
 
       <!-- SKILLS AND INTERESTS SECTION -->
       <section id="skills" class="skills" name="skills">
-        <img class="lg-icon dark-seafoam-filter" src="assets/0_skills-and-interests.svg" alt="Head and Shoulders Icon">
-
-        <h2>Skills and Interests</h2>
+        <div class="section-header">
+          <img class="lg-icon dark-seafoam-filter" src="assets/0_skills-and-interests.svg" alt="Head and Shoulders Icon">
+  
+          <h2>Skills and Interests</h2>
+        </div>
         <div class="content">
           <h3>Designer</h3>
           <p>
@@ -94,12 +98,12 @@
             Figma, Adobe Creative Suite (XD, Photoshop, Illustrator), Google Fonts, Pen & Paper, Procreate
           </p>
 
-          <hr />
-
-          <h3>Frontend Developer</h3>
+          </div>
+          
+          <div class="content">
+          <h3>Frontend Web Developer</h3>
           <p>
-            I value simple content structure, clean design patterns, and
-            thoughtful interactions.
+            I build modular systems, develop user-facing features, and keep scalability in mind.
           </p>
 
           <img class="md-icon dark-seafoam-filter" src="assets/3_languages.svg" alt="Curly Brackets and Ellipses Icon">
@@ -118,9 +122,11 @@
 
       <!-- PROJECTS SECTION -->
       <section id="projects" class="projects" name="projects">
-        <img class="lg-icon dark-seafoam-filter" src="assets/5_recent-projects.svg" alt="Terminal and Arrow Brackets Icon">
-        <h2>Recent Projects</h2>
-        <div class="projects-container">
+        <div class="section-header">
+          <img class="lg-icon dark-seafoam-filter" src="assets/5_recent-projects.svg" alt="Terminal and Arrow Brackets Icon">
+          <h2>Recent Projects</h2>
+        </div>
+        <div class="content">
           <div class="project-item">
             <div class="project-item-content">
               <a href="https://tylerswindell.design/">
@@ -197,5 +203,14 @@
         </div>
       </footer>
     </div>
+
+    <!-- SVG element defining the clip path -->
+    <svg width="0" height="0">
+      <defs>
+        <clipPath id="waveClip" clipPathUnits="objectBoundingBox">
+          <path d="M0,0 C0.4,0.1 0,0.2 0.2,0.7 C0.25,0.8 0.55,0.9 0,1 L1,1 L0,1 Z"></path>
+      </clipPath>
+    </defs>
+  </svg>
   </body>
 </html>

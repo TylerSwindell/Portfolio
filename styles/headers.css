@@ -92,3 +92,52 @@ h2 {
 h3 {
   font-size: var(--lg-text-size);
 }
+
+#modal-overlay {
+  height: 300vh;
+  width: 100vw;
+  position: fixed;
+  background-color: var(--dark-sf);
+  opacity: 0%;
+  z-index: 99;
+  -webkit-transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: all 0.2s cubic-bezier(1, -0.23, 0, 1.21);
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#modal-overlay.show {
+  opacity: 30%;
+}
+
+#modal-overlay.hide {
+  opacity: 0%;
+}
+
+.md-icon,
+.lg-icon {
+  margin-bottom: 10px;
+}
+
+.sm-icon {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+.md-icon {
+  width: 55px;
+  height: 55px;
+}
+
+.lg-icon {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 10px;
+}
