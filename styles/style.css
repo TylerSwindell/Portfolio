@@ -17,12 +17,13 @@ section#skills > div.content {
 }
 
 #modal-overlay {
-  height: 150vh;
+  height: 300vh;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   background-color: var(--dark-sf);
-  opacity: 30%;
+  opacity: 0%;
   z-index: 99;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .visible {
@@ -33,23 +34,38 @@ section#skills > div.content {
   visibility: hidden;
 }
 
-#expanded-nav {
-  position: absolute;
+#modal-overlay.show {
+  opacity: 30%;
+}
+
+#modal-overlay.hide {
+  opacity: 0%;
+}
+
+#mobile-nav {
+  position: fixed;
   display: flex;
   align-items: start;
   justify-content: center;
   padding: 5rem 0;
-  height: 150vh;
+  height: 300vh;
   top: 0;
-  right: 0;
   background-color: var(--darker-sf);
   box-shadow: -4px 3px 7px rgba(0, 0, 0, 0.16);
-  width: 202px;
+  width: 60vw;
   z-index: 100;
+  right: 0;
+  left: 40vw;
+  transition: left 0.3s ease-in;
 }
 
-#expanded-nav > ul {
-  height: 80vh;
+#mobile-nav.closed-nav {
+  right: 0;
+  left: 100vw;
+}
+
+#mobile-nav > ul {
+  height: 60vh;
   margin-top: 10vh;
   display: flex;
   flex-direction: column;
@@ -57,11 +73,11 @@ section#skills > div.content {
   align-items: center;
 }
 
-#expanded-nav > ul > li {
+#mobile-nav > ul > li {
   list-style: none;
 }
 
-#expanded-nav > ul > li > a {
+#mobile-nav > ul > li > a {
   font-weight: var(--medium-text-weight);
   font-size: var(--lg-text-size);
   color: var(--light-sf);
