@@ -28,6 +28,7 @@ Designed in Abode XD and built using HTML, CSS, and Javascript to showcase my
 
 ## To-Dos
 
+- ~~Add hover effects to sections~~ | 5/31/23
 - Add social icons in header
-- Add hover effects to sections
 - Add Landscape support
+- Add Project Overview Modal (Desktop)

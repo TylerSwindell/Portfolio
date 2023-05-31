@@ -6,6 +6,7 @@ nav {
 
 nav > ul > li {
   list-style: none;
+  transition: all 0.25s ease-in-out;
 }
 
 nav > ul > li > a {
@@ -42,6 +43,10 @@ nav > ul > li > a:hover {
   color: var(--dark-sf);
   box-shadow: 0 3px 5px #03383046;
   text-shadow: none;
+}
+
+#main-navigation > ul > li:nth-of-type(3):hover {
+  transform: translate(0px, -3px);
 }
 
 .wave {

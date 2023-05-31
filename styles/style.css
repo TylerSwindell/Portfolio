@@ -33,14 +33,24 @@ section#about > div.content > p {
   transition: all 1s ease-in-out;
 }
 
+section#skills > div.content-container > div.content:hover,
+.project-item:hover {
+  transform: translate(-20px, -20px);
+  box-shadow: var(--backdrop-hover);
+}
+
 section,
 section#skills > div.content-container,
 section#projects > div.content {
   display: grid;
   place-items: center;
   margin-bottom: 75px;
-  gap: 2rem;
+  gap: 3rem;
   width: 100%;
+}
+
+section#skills > div.content-container {
+  gap: 1.5rem;
 }
 
 section#skills > div.content-container > div.content {
@@ -52,6 +62,7 @@ section#skills > div.content-container > div.content {
   padding: 30px 30px 0;
   box-shadow: var(--backdrop);
   width: 100%;
+  transition: all 0.25s ease-in-out;
 }
 
 div.section-header {
@@ -97,6 +108,7 @@ hr {
   border-radius: 12px;
   box-shadow: var(--backdrop);
   width: 100%;
+  transition: all 0.25s ease-in-out;
 }
 
 .project-item-content {
