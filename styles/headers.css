@@ -3,7 +3,8 @@
   --dark-sf: #22b19d;
   --light-sf: #e0f6f8;
   --section-color: #e4f5f8;
-  --pfolio-img: 190px;
+  --sm-pfolio-img: 140px;
+  --md-pfolio-img: 190px;
   --sm-text-size: 14px;
   --md-text-size: 16px;
   --lg-text-size: 23px;
@@ -140,4 +141,9 @@ h3 {
   width: 75px;
   height: 75px;
   margin-bottom: 10px;
+}
+
+.dark-seafoam-filter {
+  filter: invert(50%) sepia(100%) saturate(335%) hue-rotate(122deg)
+    brightness(95%) contrast(89%);
 }

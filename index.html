@@ -12,9 +12,9 @@
     />
 		<link rel="stylesheet" href="styles/headers.css">
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/hamburger-icon.css">
 		<link rel="stylesheet" href="styles/media-queries.css">
-		<link rel="stylesheet" href="styles/mobile-nav.css">
 
     <script src="index.js" defer></script>
 
@@ -27,13 +27,13 @@
     <div class="container">
       <!-- HEADER SECTION -->
       <header>
-        <div id="hamburger-icon" class="hamburger-icon">
+        <div id="hamburger-icon" class="hamburger-icon hidden">
           <span class="hb-line"></span>
           <span class="hb-line"></span>
           <span class="hb-line"></span>
         </div>
-        <nav id="mobile-nav" class="closed-nav">
-          <div class="exit-icon">
+        <nav id="main-navigation" class="closed-nav hidden">
+          <div class="exit-icon hidden">
             <span class="x-line"></span>
             <span class="x-line"></span>
           </div>
@@ -45,7 +45,6 @@
                 >Resume</a
               >
             </li>
-            <li><a id="about-nav" href="#about">About</a></li>
             <li><a id="projects-nav" href="#projects">Projects</a></li>
             <li>
               <a
@@ -63,7 +62,7 @@
       <!-- ABOUT SECTION -->
       <section id="about" class="about" name="about">
         <div class="portfolio-image"></div>
-        <div>
+        <div class="content">
           <p class="sz-xxl dark-sf">Hello!</p>
           <h1 class="light-text sz-lg">My name is <span class="sz-lg medium-text italic dark-sf">Tyler Swindell</h1>
           <p class="light-text sz-md">
@@ -81,41 +80,45 @@
   
           <h2>Skills and Interests</h2>
         </div>
-        <div class="content">
-          <h3>Designer</h3>
-          <p>
-            I value simple content structure, clean design patterns, and
-            thoughtful interactions.
-          </p>
+        <div class="content-container">
+          <div class="content">
+            <h3>Designer</h3>
+            <p>
+              I value simple content structure, clean design patterns, and
+              thoughtful interactions.
+            </p>
 
-          <img class="md-icon dark-seafoam-filter" src="assets/1_design-specialties.svg" alt="Framed Painting Icon">
-          <h4>Design Specialties</h4>
-          <p>UX/UI, Web Apps, Logos</p>
+            <img class="md-icon dark-seafoam-filter" src="assets/1_design-specialties.svg" alt="Framed Painting Icon">
+            <h4>Design Specialties</h4>
+            <p>UX/UI, Web Apps, Logos</p>
 
-          <img class="md-icon dark-seafoam-filter" src="assets/2_design-tools.svg" alt="Paint Brush Icon">
-          <h4>Design Tools</h4>
-          <p>
-            Figma, Adobe Creative Suite (XD, Photoshop, Illustrator), Google Fonts, Pen & Paper, Procreate
-          </p>
+            <img class="md-icon dark-seafoam-filter" src="assets/2_design-tools.svg" alt="Paint Brush Icon">
+            <h4>Design Tools</h4>
+            <p>
+              Figma, Adobe Creative Suite (XD, Photoshop, Illustrator), Google Fonts, Pen & Paper, Procreate
+            </p>
 
           </div>
           
+          <span class="vertical-rule"></span>
+
           <div class="content">
-          <h3>Frontend Web Developer</h3>
-          <p>
-            I build modular systems, develop user-facing features, and keep scalability in mind.
-          </p>
+            <h3>Frontend Web Developer</h3>
+            <p>
+              I build modular systems, develop user-facing features, and keep scalability in mind.
+            </p>
 
-          <img class="md-icon dark-seafoam-filter" src="assets/3_languages.svg" alt="Curly Brackets and Ellipses Icon">
-          <h4>Languages</h4>
-          <p>HTML, CSS, Javascript, PHP, SQL</p>
+            <img class="md-icon dark-seafoam-filter" src="assets/3_languages.svg" alt="Curly Brackets and Ellipses Icon">
+            <h4>Languages</h4>
+            <p>HTML, CSS, Javascript, PHP, SQL</p>
 
-          <img class="md-icon dark-seafoam-filter" src="assets/4_framworks-technology.svg" alt="Puzzle Piece Icon">
-          <h4>Frameworks and Technologies</h4>
-          <p>
-            React, React-Native, DynamoDB, AWS S3, Redux, MongoDB, Firebase,
-            NodeJS, MySQL, XAMPP, Expo
-          </p>
+            <img class="md-icon dark-seafoam-filter" src="assets/4_framworks-technology.svg" alt="Puzzle Piece Icon">
+            <h4>Frameworks and Technologies</h4>
+            <p>
+              React, React-Native, DynamoDB, AWS S3, Redux, MongoDB, Firebase,
+              NodeJS, MySQL, XAMPP, Expo
+            </p>
+          </div>
         </div>
       </section>
       <!-- END SKILLS AND INTERESTS SECTION -->
@@ -203,14 +206,5 @@
         </div>
       </footer>
     </div>
-
-    <!-- SVG element defining the clip path -->
-    <svg width="0" height="0">
-      <defs>
-        <clipPath id="waveClip" clipPathUnits="objectBoundingBox">
-          <path d="M0,0 C0.4,0.1 0,0.2 0.2,0.7 C0.25,0.8 0.55,0.9 0,1 L1,1 L0,1 Z"></path>
-      </clipPath>
-    </defs>
-  </svg>
   </body>
 </html>

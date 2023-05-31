@@ -3,30 +3,48 @@
 const navButton = document.querySelector(".hamburger-icon");
 const exitButton = document.querySelector(".exit-icon");
 const modalOverlay = document.getElementById("modal-overlay");
-const mobileNav = document.getElementById("mobile-nav");
-const mobileNavLinks = document.querySelectorAll("#mobile-nav>ul>li");
+const mainNav = document.getElementById("main-navigation");
+const mainNavLinks = document.querySelectorAll("#main-nav>ul>li");
 
 console.log("Script Loaded");
 
-const toggleOverlay = () => {
+const toggleOverlay = (noScroll = true) => {
+  const modalIsVisible = modalOverlay.classList.contains("show");
+
   modalOverlay.classList.toggle("show");
   modalOverlay.classList.toggle("visible");
   modalOverlay.classList.toggle("hidden");
 
-  if (modalOverlay.classList.contains("show")) {
-    modalOverlay.style.marginTop = `${window.scrollY}px`;
+  if (!noScroll) return;
+
+  if (!modalIsVisible) {
+    // Moves modal overlay down to current screen position
+
     disableScroll();
   } else enableScroll();
 };
 
 const toggleNav = () => {
+  const modalIsHidden = modalOverlay.classList.contains("hidden");
+
+  // Do not toggle nav if site width is larger than a mobile device
+  if (window.innerWidth > 769) return;
+
   toggleOverlay();
-  mobileNav.classList.toggle("closed-nav");
+
+  mainNav.classList.toggle("closed-nav");
+
+  if (modalIsHidden) {
+    mainNav.classList.toggle("hidden");
+  } else
+    setTimeout(() => {
+      mainNav.classList.toggle("hidden");
+    }, 300);
 };
 
 navButton.addEventListener("click", toggleNav);
 exitButton.addEventListener("click", toggleNav);
-mobileNavLinks.forEach((item) => item.addEventListener("click", toggleNav));
+mainNavLinks.forEach((item) => item.addEventListener("click", toggleNav));
 
 document.addEventListener("keydown", (e) => {
   switch (e.key) {

@@ -1,34 +1,347 @@
-@media screen and (max-width: 576px) {
-  /* CSS rules for small screens */
+@media screen and (max-width: 768px) {
+  /* CSS rules for medium screens */
+
   body > div.container {
-    padding: 2rem;
-    background: url("../assets/bg.svg");
-    background-position: center;
+    display: block;
+    background: url("../assets/bg-mobile.svg");
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 25px;
   }
 
-  header {
+  #main-navigation > ul > li:nth-of-type(3) > a {
+    color: var(--light-sf);
+  }
+
+  #hamburger-icon,
+  .exit-icon {
+    visibility: visible;
+  }
+
+  #main-navigation {
+    position: fixed;
+    padding: 5rem 0;
+    height: 100vh;
+    top: 0;
+    background-color: var(--darker-sf);
+    box-shadow: -4px 3px 7px rgba(0, 0, 0, 0.16);
+    width: 60vw;
+    z-index: 100;
+    right: 0;
+    left: 40vw;
+    --mask: radial-gradient(76.03px at 102px 50%, #000 99%, #0000 101%) 0
+        calc(50% - 68px) / 100% 136px,
+      radial-gradient(76.03px at -68px 50%, #0000 99%, #000 101%) 34px 50%/100%
+        136px repeat-y;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    transition: left 0.3s cubic-bezier(0.94, 0.01, 0.58, 0.97);
+  }
+
+  #main-navigation > ul {
+    height: 60vh;
+    margin-top: 10vh;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #main-navigation > ul > li > a {
+    font-weight: var(--medium-text-weight);
+    font-size: var(--lg-text-size);
+    color: var(--light-sf);
+  }
+
+  #main-navigation.closed-nav {
+    right: 0;
+    left: 100vw;
+  }
+
+  section#about {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 }
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  /* CSS rules for medium screens */
-}
-
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   /* CSS rules for large screens */
+  header {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    height: 50px;
+  }
+
+  #main-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    visibility: visible;
+  }
+
+  #main-navigation > ul {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #main-navigation > ul > li > a {
+    font-weight: var(--semibold-text-weight);
+    font-size: var(--md-text-size);
+    color: var(--dark-sf);
+  }
+
+  section#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    transition: all 1s ease-in-out;
+  }
+
+  section#about > div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 75%;
+    transition: all 1s ease-in-out;
+  }
+
+  section#projects > div.content {
+    transition: all 1s ease-in-out;
+  }
+
+  section#skills {
+    width: 100%;
+  }
+
+  section#skills > div.content-container > div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--section-color);
+    border-radius: 10px;
+    padding: 30px 30px 0;
+    box-shadow: var(--backdrop);
+  }
+
+  div.section-header {
+    display: grid;
+    place-items: center;
+  }
+
+  div.content > h4,
+  div.content > h3 {
+    text-align: center;
+  }
+
+  .portfolio-image {
+    min-width: var(--sm-pfolio-img);
+    min-height: var(--sm-pfolio-img);
+    border-radius: 50%;
+    border: 8px solid var(--dark-sf);
+    background-image: url("../assets/imgs/me_500x500.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .project-item {
+    background-color: var(--section-color);
+    padding: 15px;
+    min-height: 250px;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: var(--backdrop);
+  }
+
+  .project-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgb(42, 42, 42);
+    padding: 10px;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .project-item-content > p {
+    color: white;
+    padding: 0 10px 10px;
+    font-size: var(--sm-text-size);
+    font-weight: var(--medium-text-weight);
+  }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
   /* CSS rules for extra-large screens */
+  header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    transition: all 1s ease-in-out;
+  }
+
+  #main-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    visibility: visible;
+  }
+
+  #main-navigation > ul {
+    width: 45%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #main-navigation > ul > li > a {
+    font-weight: var(--medium-text-weight);
+    font-size: 18px;
+    color: var(--dark-sf);
+  }
+
+  section#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    transition: all 1s ease-in-out;
+  }
+
+  section#about > div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 70%;
+    transition: all 1s ease-in-out;
+  }
 }
 
 @media screen and (min-width: 1201px) {
   /* CSS rules for extra-extra-large screens */
+
+  body > div.container {
+    margin-bottom: 0px;
+  }
+
+  section {
+    margin-bottom: 90px;
+  }
+
+  header {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    max-width: 1200px;
+    height: 50px;
+    transition: all 1s ease-in-out;
+  }
+
+  main {
+    width: 100%;
+    max-width: 1080px;
+    transition: all 1s ease-in-out;
+  }
+
+  section#projects > div.content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 75px;
+    gap: 2rem;
+  }
+
+  #main-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    visibility: visible;
+  }
+
+  #main-navigation > ul {
+    width: 50%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #main-navigation > ul > li > a {
+    font-weight: var(--semibold-text-weight);
+    font-size: var(--md-text-size);
+    color: var(--dark-sf);
+  }
+
+  section#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  section#skills > div.content-container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--section-color);
+    box-shadow: var(--backdrop);
+    border-radius: 10px;
+    height: 100%;
+  }
+
+  section#skills > div.content-container > div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: none;
+    border-radius: 10px;
+    padding: 30px 30px 0;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  span.vertical-rule {
+    height: 250px;
+    border: 2px solid var(--dark-sf);
+    border-radius: 2px;
+  }
+
+  section#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    transition: all 1s ease-in-out;
+  }
+
+  section#about > div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 80%;
+    transition: all 1s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 475px) and (max-width: 769px) {
+  body > div.container {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1425px) {
+  body > div.container {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
