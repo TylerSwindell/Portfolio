@@ -28,3 +28,4 @@ Designed in Abode XD and built using HTML, CSS, and Javascript to showcase my
 - Add social icons in header
 - Add Landscape support
 - Add Project Overview Modal (Desktop)
+- Add config for nav links
