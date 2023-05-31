@@ -1,26 +1,26 @@
-#main-navigation {
+nav {
   display: flex;
   align-items: start;
   justify-content: center;
 }
 
-#main-navigation > ul > li {
+nav > ul > li {
   list-style: none;
 }
 
-#main-navigation > ul > li > a {
+nav > ul > li > a {
   font-weight: var(--medium-text-weight);
   font-size: var(--md-text-size);
   color: var(--dark-sf);
   transition: all 0.125s ease-in-out;
 }
 
-#main-navigation > ul > li > a:active {
+nav > ul > li > a:active {
   color: var(--dark-sf);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-#main-navigation > ul > li > a:hover {
+nav > ul > li > a:hover {
   color: white;
   text-shadow: 0 1px 5px #03383046;
 }
@@ -61,4 +61,84 @@
   background-color: var(--light-sf);
   clip-path: url(#waveClip);
   z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for medium screens */
+  #main-navigation {
+    position: fixed;
+    padding: 5rem 0 5rem 3rem;
+    height: 100vh;
+    top: 0;
+    background-color: var(--darker-sf);
+    box-shadow: -4px 3px 7px rgba(0, 0, 0, 0.16);
+    width: 60vw;
+    z-index: 100;
+    right: 0;
+    left: 40vw;
+    --mask: radial-gradient(76.03px at 102px 50%, #000 99%, #0000 101%) 0
+        calc(50% - 68px) / 100% 136px,
+      radial-gradient(76.03px at -68px 50%, #0000 99%, #000 101%) 34px 50%/100%
+        136px repeat-y;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    transition: left 0.3s cubic-bezier(0.94, 0.01, 0.58, 0.97);
+  }
+
+  #main-navigation > ul {
+    height: 60vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #main-navigation > ul > li > a {
+    font-weight: var(--medium-text-weight);
+    font-size: var(--lg-text-size);
+    color: var(--light-sf);
+  }
+
+  #main-navigation.closed-nav {
+    right: 0;
+    left: 100vw;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* CSS rules for large screens */
+
+  #main-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    visibility: visible;
+  }
+
+  #main-navigation > ul {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* CSS rules for extra-large screens */
+
+  #main-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    visibility: visible;
+  }
+
+  #main-navigation > ul {
+    width: 45%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

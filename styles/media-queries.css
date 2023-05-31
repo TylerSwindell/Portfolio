@@ -24,46 +24,6 @@
     visibility: visible;
   }
 
-  #main-navigation {
-    position: fixed;
-    padding: 5rem 0 5rem 3rem;
-    height: 100vh;
-    top: 0;
-    background-color: var(--darker-sf);
-    box-shadow: -4px 3px 7px rgba(0, 0, 0, 0.16);
-    width: 60vw;
-    z-index: 100;
-    right: 0;
-    left: 40vw;
-    --mask: radial-gradient(76.03px at 102px 50%, #000 99%, #0000 101%) 0
-        calc(50% - 68px) / 100% 136px,
-      radial-gradient(76.03px at -68px 50%, #0000 99%, #000 101%) 34px 50%/100%
-        136px repeat-y;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
-    transition: left 0.3s cubic-bezier(0.94, 0.01, 0.58, 0.97);
-  }
-
-  #main-navigation > ul {
-    height: 60vh;
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  #main-navigation > ul > li > a {
-    font-weight: var(--medium-text-weight);
-    font-size: var(--lg-text-size);
-    color: var(--light-sf);
-  }
-
-  #main-navigation.closed-nav {
-    right: 0;
-    left: 100vw;
-  }
-
   section#about {
     display: flex;
     flex-direction: column;
@@ -73,20 +33,6 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* CSS rules for large screens */
-
-  #main-navigation {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    visibility: visible;
-  }
-
-  #main-navigation > ul {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 
   section#about {
     display: flex;
@@ -172,22 +118,6 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   /* CSS rules for extra-large screens */
-
-  #main-navigation {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    visibility: visible;
-  }
-
-  #main-navigation > ul {
-    width: 45%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   section#about {
     display: flex;
     flex-direction: row;
@@ -212,6 +142,10 @@
     width: 100%;
     max-width: 1080px;
     transition: all 1s ease-in-out;
+  }
+
+  body > div.container {
+    margin-bottom: 0;
   }
 
   section#projects > div.content {
