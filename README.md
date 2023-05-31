@@ -30,3 +30,4 @@ Designed in Abode XD and built using HTML, CSS, and Javascript to showcase my
 
 - Add social icons in header
 - Add hover effects to sections
+- Add Landscape support
