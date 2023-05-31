@@ -4,7 +4,7 @@ const navButton = document.querySelector(".hamburger-icon");
 const exitButton = document.querySelector(".exit-icon");
 const modalOverlay = document.getElementById("modal-overlay");
 const mainNav = document.getElementById("main-navigation");
-const mainNavLinks = document.querySelectorAll("#main-nav>ul>li");
+const mainNavLinks = document.querySelectorAll("#main-navigation>ul>li");
 
 console.log("Script Loaded");
 
@@ -19,7 +19,7 @@ const toggleOverlay = (noScroll = true) => {
 
   if (!modalIsVisible) {
     // Moves modal overlay down to current screen position
-
+    modalOverlay.style.marginTop = `${window.scrollY}px`;
     disableScroll();
   } else enableScroll();
 };
