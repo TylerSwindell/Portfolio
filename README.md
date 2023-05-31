@@ -22,10 +22,6 @@ Designed in Abode XD and built using HTML, CSS, and Javascript to showcase my
 - Git
 - GitHub
 
-## Homepage visuals
-
-## Skill set visuals
-
 ## To-Dos
 
 - ~~Add hover effects to sections~~ | 5/31/23
