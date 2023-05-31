@@ -2,7 +2,7 @@
   --darker-sf: #033830;
   --dark-sf: #22b19d;
   --light-sf: #e0f6f8;
-  --section-color: #e4f5f8;
+  --lighter-color: #e4f5f8;
   --sm-pfolio-img: 140px;
   --md-pfolio-img: 190px;
   --sm-text-size: 14px;
@@ -28,6 +28,7 @@ html {
   color: var(--darker-sf);
   font-weight: var(--light-text-weight);
   font-size: var(--md-text-size);
+  scroll-behavior: smooth;
 }
 
 header {
@@ -146,4 +147,9 @@ h3 {
 .dark-seafoam-filter {
   filter: invert(50%) sepia(100%) saturate(335%) hue-rotate(122deg)
     brightness(95%) contrast(89%);
+}
+
+.light-seafoam-filter {
+  filter: invert(85%) sepia(29%) saturate(102%) hue-rotate(141deg)
+    brightness(108%) contrast(95%);
 }
