@@ -109,6 +109,25 @@ nav > ul > li > a:hover {
     right: 0;
     left: 100vw;
   }
+
+  @media (orientation: landscape) {
+    #main-navigation {
+      padding: 0;
+      width: 90vw;
+      right: 0;
+      left: 10vw;
+    }
+
+    #main-navigation > ul {
+      height: 100%;
+      width: 100%;
+      padding: 0 2vw 0 12vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
