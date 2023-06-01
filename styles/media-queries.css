@@ -5,9 +5,20 @@
     display: flex;
     justify-content: end;
     width: 100%;
-    height: 50px;
+    height: fit-content;
     margin: 0;
     transition: all 1s ease-in-out;
+  }
+
+  header > div.social-icons {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+  }
+
+  header > nav > ul > li:nth-of-type(4) {
+    visibility: visible;
+    position: relative;
   }
 
   body > div.container {
@@ -19,8 +30,12 @@
     margin-bottom: 25px;
   }
 
-  #hamburger-icon,
+  #hamburger-icon {
+    position: relative;
+    visibility: visible;
+  }
   .exit-icon {
+    position: absolute;
     visibility: visible;
   }
 
@@ -28,6 +43,12 @@
     display: flex;
     flex-direction: column;
     gap: 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  #hamburger-icon,
+  .exit-icon {
+    position: absolute;
   }
 }
 
@@ -142,21 +163,6 @@
     flex-direction: row;
     margin-bottom: 75px;
     gap: 2rem;
-  }
-
-  #main-navigation {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    visibility: visible;
-  }
-
-  #main-navigation > ul {
-    width: 50%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   }
 
   section#skills {

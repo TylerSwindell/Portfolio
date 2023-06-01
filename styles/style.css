@@ -1,9 +1,12 @@
 /* Section Styling */
 header {
   display: flex;
-  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
   width: 100%;
-  height: 50px;
+  height: fit-content;
   max-width: 1080px;
   margin: 0;
   transition: all 1s ease-in-out;
@@ -137,11 +140,16 @@ hr {
   width: fit-content;
 }
 
+a.social-link {
+  width: fit-content;
+  height: fit-content;
+}
+
 .social-icons {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
-  width: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin: 1rem;
 }
 
 .social-icon {
@@ -153,6 +161,11 @@ hr {
 .social-icon:hover {
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.2));
   fill: white;
+}
+
+header > nav > ul > li:nth-of-type(4) {
+  visibility: hidden;
+  position: absolute;
 }
 
 footer {

@@ -151,7 +151,7 @@ h3 {
 .sm-icon {
   width: 25px;
   height: 25px;
-  margin: 10px;
+  margin: 0 0.25rem;
 }
 
 .md-icon {
