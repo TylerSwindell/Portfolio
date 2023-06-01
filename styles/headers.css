@@ -1,19 +1,27 @@
 :root {
+  /* Color Variables */
   --darker-sf: #033830;
   --dark-sf: #22b19d;
   --light-sf: #e0f6f8;
   --lighter-color: #e4f5f8;
+
+  /* Element Size Variables */
   --sm-pfolio-img: 140px;
   --md-pfolio-img: 190px;
+
+  /* Text Size Variables */
   --sm-text-size: 14px;
   --md-text-size: 16px;
   --lg-text-size: 23px;
   --xl-text-size: 32px;
   --xxl-text-size: 70px;
+
+  /* Text Weight Variables */
   --light-text-weight: 300;
   --medium-text-weight: 500;
   --semibold-text-weight: 600;
 
+  /* Shadow Box Variables */
   --backdrop: -0.5px -0.5px 2px rgba(0, 0, 0, 0.08),
     2px 2px 2px rgba(0, 0, 0, 0.2), 12px 12px 0px var(--dark-sf),
     14px 14px 2px rgba(0, 0, 0, 0.4);
@@ -21,6 +29,15 @@
   --backdrop-hover: -0.5px -0.5px 2px rgba(0, 0, 0, 0.08),
     10px 10px 10px rgba(0, 0, 0, 0.2), 30px 20px 0px var(--dark-sf),
     32px 22px 10px rgba(0, 0, 0, 0.4);
+
+  /* Filter Variables */
+  --dark-seafoam-filter: invert(50%) sepia(100%) saturate(335%)
+    hue-rotate(122deg) brightness(95%) contrast(89%);
+
+  --light-seafoam-filter: invert(85%) sepia(29%) saturate(102%)
+    hue-rotate(141deg) brightness(108%) contrast(95%);
+
+  --white-filter: brightness(0) invert(1);
 }
 
 *,
@@ -149,11 +166,9 @@ h3 {
 }
 
 .dark-seafoam-filter {
-  filter: invert(50%) sepia(100%) saturate(335%) hue-rotate(122deg)
-    brightness(95%) contrast(89%);
+  filter: var(--dark-seafoam-filter);
 }
 
 .light-seafoam-filter {
-  filter: invert(85%) sepia(29%) saturate(102%) hue-rotate(141deg)
-    brightness(108%) contrast(95%);
+  filter: var(--light-seafoam-filter);
 }
