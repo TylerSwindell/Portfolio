@@ -44,6 +44,13 @@
     flex-direction: column;
     gap: 0;
   }
+
+  section#projects > div.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    transition: all 1s linear;
+  }
 }
 @media screen and (min-width: 769px) {
   #hamburger-icon,
@@ -68,10 +75,6 @@
     flex-direction: column;
     align-items: start;
     width: 75%;
-    transition: all 1s ease-in-out;
-  }
-
-  section#projects > div.content {
     transition: all 1s ease-in-out;
   }
 
@@ -159,10 +162,10 @@
   }
 
   section#projects > div.content {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 75px;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    transition: all 1s linear;
   }
 
   section#skills {

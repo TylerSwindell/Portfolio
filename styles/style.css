@@ -52,6 +52,12 @@ section#projects > div.content {
   width: 100%;
 }
 
+section#projects > div.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: all 1s linear;
+}
+
 section#skills > div.content-container {
   gap: 1.5rem;
 }

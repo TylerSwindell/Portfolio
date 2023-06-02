@@ -8,9 +8,10 @@ I built this porfolio website to showcase my technical and web design skills.
 
 ## Project timeline and technologies used
 
-Designed in Abode XD and built using HTML, CSS, and Javascript to showcase my
+Designed in Abode XD and built using HTML, CSS, and Javascript to showcase
 
 - My technical skill set
+- My creative skill set
 - My web design skill set
 - My projects
 
@@ -27,5 +28,5 @@ Designed in Abode XD and built using HTML, CSS, and Javascript to showcase my
 - ~~Add hover effects to sections~~ | 5/31/23
 - ~~Add social icons in header~~ | 6/01/23
 - ~~Add Landscape support~~ | 6/01/23
-- Add Project Overview Modal (Desktop)
+- ~~Add script to insert project items from config~~ | 06/02/23
 - Add config for nav links

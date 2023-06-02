@@ -1,14 +1,8 @@
-"use-strict";
-
-const navButton = document.querySelector(".hamburger-icon");
-const exitButton = document.querySelector(".exit-icon");
 const modalOverlay = document.getElementById("modal-overlay");
 const mainNav = document.getElementById("main-navigation");
-const mainNavLinks = document.querySelectorAll("#main-navigation>ul>li");
 
-console.log("Script Loaded");
-
-const toggleOverlay = (noScroll = true) => {
+// Support Functions
+export const toggleOverlay = (noScroll = true) => {
   const modalIsVisible = modalOverlay.classList.contains("show");
 
   modalOverlay.classList.toggle("show");
@@ -24,7 +18,7 @@ const toggleOverlay = (noScroll = true) => {
   } else enableScroll();
 };
 
-const toggleNav = () => {
+export const toggleNav = () => {
   const modalIsHidden = modalOverlay.classList.contains("hidden");
 
   // Do not toggle nav if site width is larger than a mobile device
@@ -42,31 +36,16 @@ const toggleNav = () => {
     }, 300);
 };
 
-navButton.addEventListener("click", toggleNav);
-exitButton.addEventListener("click", toggleNav);
-mainNavLinks.forEach((item) => item.addEventListener("click", toggleNav));
-
-document.addEventListener("keydown", (e) => {
-  switch (e.key) {
-    case "Escape":
-      toggleNav();
-      break;
-    default:
-      console.log(e);
-      break;
-  }
-});
-
-function disableScroll() {
+export function disableScroll() {
   // Get the current page scroll position
-  scrollTop = window.scrollY || document.documentElement.scrollTop;
-  (scrollLeft = window.scrollX || document.documentElement.scrollLeft),
-    // if any scroll is attempted, set this to the previous value
-    (window.onscroll = function () {
-      window.scrollTo(scrollLeft, scrollTop);
-    });
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+  // if any scroll is attempted, set this to the previous value
+  window.onscroll = function () {
+    window.scrollTo(scrollLeft, scrollTop);
+  };
 }
 
-function enableScroll() {
+export function enableScroll() {
   window.onscroll = function () {};
 }
