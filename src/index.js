@@ -1,6 +1,6 @@
 "use-strict";
 import { toggleNav } from "./supportFunctions.js";
-import { insertProjectItems } from "./templateFunctions.js";
+import { renderProjectSection } from "./sections/projects.js";
 
 // Query Selectors
 const navButton = document.querySelector(".hamburger-icon");
@@ -26,7 +26,7 @@ document.addEventListener("keydown", (e) => {
 
 // Main Function
 (() => {
-  insertProjectItems();
+  renderProjectSection();
 })();
 
 console.log("Script Loaded");

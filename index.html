@@ -1,38 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6C3TRFH1BV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6C3TRFH1BV");
+    </script>
+
+    <script
+      src="src/index.js"
+      type="module"
+      defer
+    ></script>
+
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- Google tag (gtag.js) -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/headers.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/hamburger-icon.css" />
-    <link rel="stylesheet" href="styles/navigation.css" />
-    <link rel="stylesheet" href="styles/media-queries.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.png" />
-
-    <script src="src/index.js" type="module" defer></script>
+    <link
+      rel="stylesheet"
+      href="styles/headers.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/hamburger-icon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/navigation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/media-queries.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/favicon.png"
+    />
 
     <title>Tyler Swindell. Design.</title>
   </head>
 
   <body>
-    <div id="modal-overlay" class="hidden"></div>
+    <div
+      id="modal-overlay"
+      class="hidden"
+    ></div>
     <div class="container">
       <!-- HEADER SECTION -->
       <header>
-        <div id="hamburger-icon" class="hamburger-icon hidden">
+        <div
+          id="hamburger-icon"
+          class="hamburger-icon hidden"
+        >
           <span class="hb-line"></span>
           <span class="hb-line"></span>
           <span class="hb-line"></span>
         </div>
-        <nav id="main-navigation" class="closed-nav hidden">
+        <nav
+          id="main-navigation"
+          class="closed-nav hidden"
+        >
           <ul>
             <li>
               <a
@@ -41,9 +101,17 @@
                 >Resume</a
               >
             </li>
-            <li><a id="projects-nav" href="#projects">Projects</a></li>
             <li>
-              <a href="mailto:tyler.swindell.design@gmail.com" target="_blank"
+              <a
+                id="projects-nav"
+                href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:tyler.swindell.design@gmail.com"
+                target="_blank"
                 >Write Me!</a
               >
             </li>
@@ -150,7 +218,10 @@
 
       <main>
         <!-- ABOUT SECTION -->
-        <section id="about" class="about">
+        <section
+          id="about"
+          class="about"
+        >
           <div class="portfolio-image"></div>
           <div class="content">
             <p class="sz-xxl dark-sf">Hello!</p>
@@ -169,7 +240,10 @@
         <!-- END ABOUT SECTION -->
 
         <!-- SKILLS AND INTERESTS SECTION -->
-        <section id="skills" class="skills">
+        <section
+          id="skills"
+          class="skills"
+        >
           <div class="section-header">
             <img
               class="lg-icon dark-seafoam-filter"
@@ -240,7 +314,10 @@
         <!-- END SKILLS AND INTERESTS SECTION -->
 
         <!-- PROJECTS SECTION -->
-        <section id="projects" class="projects">
+        <section
+          id="projects"
+          class="projects"
+        >
           <div class="section-header">
             <img
               class="lg-icon dark-seafoam-filter"
