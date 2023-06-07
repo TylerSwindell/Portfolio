@@ -103,7 +103,7 @@ hr {
   min-height: var(--md-pfolio-img);
   border-radius: 50%;
   border: 10px solid var(--dark-sf);
-  background-image: url("../assets/imgs/me_500x500.png");
+  background-image: url("../assets/imgs/me_500x500.webp");
   background-position: center;
   background-size: cover;
   transition: all 1s ease-in-out;
