@@ -4,9 +4,9 @@
 	 viewBox="0 0 2400 1260" style="enable-background:new 0 0 2400 1260;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{clip-path:url(#SVGID_00000024719635515059816590000016543425896100337331_);fill:#E0F6F8;}
+	.st1{clip-path:url(#SVGID_00000064347103128427168130000014700191646379038861_);fill:#E0F6F8;}
 	.st2{fill:#CEF2F5;}
-	.st3{clip-path:url(#SVGID_00000121259557165614211510000003303759448477524910_);}
+	.st3{clip-path:url(#SVGID_00000136384453138192057200000016353069854398148524_);}
 	.st4{fill:none;stroke:#22B19D;stroke-width:15;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:10;}
 	.st5{fill:#22B19D;}
 </style>
@@ -18,11 +18,11 @@
 		<defs>
 			<rect id="SVGID_1_" x="0.1" y="-0.4" width="2400" height="1260"/>
 		</defs>
-		<clipPath id="SVGID_00000099642647955857642910000006173342693843441322_">
+		<clipPath id="SVGID_00000140729822516381359530000016455186665900075140_">
 			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 		</clipPath>
 		
-			<path id="Background-2_00000123417567042351769680000015593991286497384365_" style="clip-path:url(#SVGID_00000099642647955857642910000006173342693843441322_);fill:#E0F6F8;" d="
+			<path id="Background-2_00000123417567042351769680000015593991286497384365_" style="clip-path:url(#SVGID_00000140729822516381359530000016455186665900075140_);fill:#E0F6F8;" d="
 			M2.4,402.4c0,0,1806.6-121.6,1801.7,816.9c-4.3,835.3-1474.9,680.8-1804.2,1282.5v650.1c245.8,603.5,1116.7,771.8,2085.8,519.3
 			c130.2-33.9,235-96.6,317.7-181.4c-1.1-523.1-1.1-2762.3-1.1-3490.2H2.4V402.4z"/>
 	</g>
@@ -33,13 +33,13 @@
 	<g>
 		<g>
 			<defs>
-				<circle id="SVGID_00000130640181077906459870000015092175646183338152_" cx="355.5" cy="630" r="186.8"/>
+				<circle id="SVGID_00000073708238726466132580000006143330631588150200_" cx="355.5" cy="630" r="186.8"/>
 			</defs>
-			<clipPath id="SVGID_00000051354398514272797210000015862909886379714221_">
-				<use xlink:href="#SVGID_00000130640181077906459870000015092175646183338152_"  style="overflow:visible;"/>
+			<clipPath id="SVGID_00000160156821864834902400000007106419559404095913_">
+				<use xlink:href="#SVGID_00000073708238726466132580000006143330631588150200_"  style="overflow:visible;"/>
 			</clipPath>
 			
-				<g transform="matrix(1 0 0 1 -1.525879e-05 0)" style="clip-path:url(#SVGID_00000051354398514272797210000015862909886379714221_);">
+				<g transform="matrix(1 0 0 1 -1.525879e-05 0)" style="clip-path:url(#SVGID_00000160156821864834902400000007106419559404095913_);">
 				
 					<image style="overflow:visible;enable-background:new    ;" width="500" height="500" xlink:href="../../../Resume/Assets/me_500x500.png"  transform="matrix(0.7346 0 0 0.7346 171.8822 446.3439)">
 				</image>
