@@ -27,7 +27,17 @@ const updateSlide = () => {
       break;
     default:
   }
-  descElement.innerText = projects[currentIndex].desc;
+  descElement.innerHTML = `
+    <span style="font-weight:var(--semibold-text-weight);color:var(--light-sf);">
+      ${projects[currentIndex].desc}
+    </span>
+    <br>
+    <br>
+    <br>
+    <span style="color:var(--light-sf);">
+    ${projects[currentIndex].tech}
+    </span>
+    `;
 };
 
 // Function to rotate to the next image

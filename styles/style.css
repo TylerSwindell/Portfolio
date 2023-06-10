@@ -258,7 +258,7 @@ div#project-slideshow-img {
 .project-slideshow-content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 4fr 2.5fr;
+  grid-template-rows: 2fr 2.5fr;
   height: 100%;
   width: 100%;
 }
@@ -289,22 +289,26 @@ div#project-slideshow-img {
 
 .project-slideshow-content-lower {
   display: grid;
-  place-items: center;
+  justify-content: start;
+  align-content: end;
   width: 100%;
-  background-color: var(--dark-sf-41);
+  height: 100%;
+  opacity: 30%;
+  background-color: var(--dark-sf);
   transform: translateY(60%);
+  transition: all 0.25s ease-in-out;
+
+  /* Wave Mask */
   --mask: radial-gradient(92.53px at 50% 125.4px, #000 99%, #0000 101%)
       calc(50% - 88px) 0/176px 100%,
     radial-gradient(92.53px at 50% -81.4px, #0000 99%, #000 101%) 50% 44px/176px
       100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
-  transition: all 0.25s ease-in-out;
 }
 
 .project-slideshow-content-lower:hover {
-  width: 100%;
-  background-color: var(--dark-sf-41);
+  opacity: 100%;
   transform: none;
 }
 
