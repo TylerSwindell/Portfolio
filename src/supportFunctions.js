@@ -1,3 +1,5 @@
+import { developmentMode } from "./config.js";
+
 const modalOverlay = document.getElementById("modal-overlay");
 const mainNav = document.getElementById("main-navigation");
 
@@ -49,3 +51,7 @@ export function disableScroll() {
 export function enableScroll() {
   window.onscroll = function () {};
 }
+
+export const devLog = (msg) => {
+  if (developmentMode) console.log(msg);
+};
