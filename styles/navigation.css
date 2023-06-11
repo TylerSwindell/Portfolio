@@ -26,16 +26,17 @@ nav > ul > li > a:hover {
   text-shadow: 0 1px 5px #03383046;
 }
 
-#main-navigation > ul > li:nth-of-type(3) > a {
+.nav-button {
   font-size: var(--medium-text-weight);
   background-color: var(--dark-sf);
+  text-decoration: none;
   border: 1.5px solid var(--dark-sf);
   padding: 0.75rem 2rem;
   border-radius: 2px;
   color: white;
 }
 
-#main-navigation > ul > li:nth-of-type(3) > a:hover {
+.nav-button:hover {
   font-size: var(--medium-text-weight);
   background-color: var(--light-sf);
   padding: 0.75rem 2rem;
@@ -45,7 +46,7 @@ nav > ul > li > a:hover {
   text-shadow: none;
 }
 
-#main-navigation > ul > li:nth-of-type(3):hover {
+.hover:hover {
   transform: translate(0px, -3px);
 }
 
