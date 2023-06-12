@@ -18,7 +18,7 @@ export const projectItemList = [
     url: "https://demo-stroop.netlify.app/",
     image: "projects-stroop_test.png",
     textColor: textColors.light,
-    desc: "Developed to measure a person’s selective attention capacity/skills and processing speed. Log into the site using the test account now:<br><br>Email: admin@test.com | Password: admin123",
+    desc: "Developed to measure a person’s selective attention capacity/skills and processing speed. Log into the site using the test account now:<br>Email: admin@test.com | Password: admin123",
     tech: "Built using ReactJS, Bootstrap, Firestore and Firebase Auth.",
   },
   {

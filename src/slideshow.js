@@ -10,7 +10,7 @@ const updateSlide = () => {
   const imgElement = document.getElementById("project-slideshow-img");
   const titleElement = document.getElementById("project-slideshow-link");
   const descElement = document.querySelector(
-    ".project-slideshow-content-lower>p"
+    "p.project-slideshow-content-lower"
   );
 
   imgElement.style.backgroundImage = `url(${slideshowImageFolder}/${projects[currentIndex].image})`;
@@ -18,23 +18,21 @@ const updateSlide = () => {
   titleElement.innerText = projects[currentIndex].name;
   titleElement.href = projects[currentIndex].url;
 
-  switch (projects[currentIndex].textColor) {
-    case "light":
-      descElement.style.color = "var(--light-sf)";
-      break;
-    case "dark":
-      descElement.style.color = "var(--darker-sf)";
-      break;
-    default:
-  }
+  // switch (projects[currentIndex].textColor) {
+  //   case "light":
+  //     descElement.style.color = "var(--light-sf)";
+  //     break;
+  //   case "dark":
+  //     descElement.style.color = "var(--darker-sf)";
+  //     break;
+  //   default:
+  // }
   descElement.innerHTML = `
-    <span style="font-weight:var(--semibold-text-weight);color:var(--light-sf);">
       ${projects[currentIndex].desc}
-    </span>
     <br>
     <br>
     <br>
-    <span style="color:var(--light-sf);">
+    <span style="width: 100%;font-weight:var(--light-text-weight); color:var(--light-sf);">
     ${projects[currentIndex].tech}
     </span>
     `;
