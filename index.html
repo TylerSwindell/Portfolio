@@ -70,6 +70,10 @@
     />
     <link
       rel="stylesheet"
+      href="styles/slideshow.css"
+    />
+    <link
+      rel="stylesheet"
       href="styles/hamburger-icon.css"
     />
     <link
@@ -83,7 +87,7 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="/assets/favicon.png"
+      href="/assets/icons/favicon.png"
     />
 
     <title>Tyler Swindell. Design.</title>
@@ -111,13 +115,13 @@
     />
     <meta
       property="og:image"
-      content="/assets/open_graph.png"
+      content="/assets/seo/open_graph.png"
     />
 
     <!-- Twitter Meta Tags -->
     <meta
       name="twitter:card"
-      content="/assets/open_graph.png"
+      content="/assets/seo/open_graph.png"
     />
     <meta
       property="twitter:domain"
@@ -137,7 +141,7 @@
     />
     <meta
       name="twitter:image"
-      content="/assets/open_graph.png"
+      content="/assets/seo/open_graph.png"
     />
   </head>
 
@@ -174,7 +178,7 @@
           <ul>
             <li>
               <a
-                href="assets/resume-tyler_swindell-20230531.pdf"
+                href="assets/pdfs/resume-tyler_swindell-20230531.pdf"
                 target="_blank"
                 >Resume</a
               >
@@ -187,8 +191,9 @@
                 >Projects</a
               >
             </li>
-            <li>
+            <li class="hover">
               <a
+                class="nav-button"
                 href="mailto:tyler.swindell.design@gmail.com"
                 target="_blank"
                 >Write Me!</a
@@ -326,7 +331,7 @@
           <div class="section-header">
             <img
               class="lg-icon dark-seafoam-filter"
-              src="assets/0_skills-and-interests.svg"
+              src="assets/icons/0_skills-and-interests.svg"
               alt="Head and Shoulders Icon"
             />
 
@@ -342,7 +347,7 @@
 
               <img
                 class="md-icon dark-seafoam-filter"
-                src="assets/1_design-specialties.svg"
+                src="assets/icons/1_design-specialties.svg"
                 alt="Framed Painting Icon"
               />
               <h4>Design Specialties</h4>
@@ -350,7 +355,7 @@
 
               <img
                 class="md-icon dark-seafoam-filter"
-                src="assets/2_design-tools.svg"
+                src="assets/icons/2_design-tools.svg"
                 alt="Paint Brush Icon"
               />
               <h4>Design Tools</h4>
@@ -371,7 +376,7 @@
 
               <img
                 class="md-icon dark-seafoam-filter"
-                src="assets/3_languages.svg"
+                src="assets/icons/3_languages.svg"
                 alt="Curly Brackets and Ellipses Icon"
               />
               <h4>Languages</h4>
@@ -379,7 +384,7 @@
 
               <img
                 class="md-icon dark-seafoam-filter"
-                src="assets/4_framworks-technology.svg"
+                src="assets/icons/4_framworks-technology.svg"
                 alt="Puzzle Piece Icon"
               />
               <h4>Frameworks and Technologies</h4>
@@ -400,12 +405,30 @@
           <div class="section-header">
             <img
               class="lg-icon dark-seafoam-filter"
-              src="assets/5_recent-projects.svg"
+              src="assets/icons/5_recent-projects.svg"
               alt="Terminal and Arrow Brackets Icon"
             />
             <h2>Recent Projects</h2>
           </div>
-          <div class="content"></div>
+          <!-- <div class="content"></div> -->
+          <div id="project-slideshow">
+            <div id="project-slideshow-img">
+              <div id="slideshow-controls">
+                <button id="previous-btn">&#8619;</button>
+                <div class="project-slideshow-content">
+                  <div class="project-slideshow-content-upper">
+                    <a
+                      id="project-slideshow-link"
+                      href=""
+                      target="_blank"
+                    ></a>
+                  </div>
+                  <p class="project-slideshow-content-lower"></p>
+                </div>
+                <button id="next-btn">&#8620;</button>
+              </div>
+            </div>
+          </div>
         </section>
         <!-- END PROJECTS SECTION -->
       </main>
@@ -415,7 +438,7 @@
           <ul>
             <li>
               <a
-                href="assets/resume-tyler_swindell-20230531.pdf"
+                href="assets/pdfs/resume-tyler_swindell-20230531.pdf"
                 target="_blank"
                 >Resume</a
               >
@@ -475,6 +498,7 @@
           </a>
         </div>
       </footer>
+      <!-- END FOOTER -->
     </div>
   </body>
 </html>

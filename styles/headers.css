@@ -1,8 +1,11 @@
 :root {
   /* Color Variables */
   --darker-sf: #033830;
+  --dark-sf-41: #22b19ebc;
   --dark-sf: #22b19d;
+  --seafoam: #cff2f5;
   --light-sf: #e0f6f8;
+  --lighter-sf: rgb(232, 249, 251);
   --lighter-color: #e4f5f8;
 
   /* Element Size Variables */

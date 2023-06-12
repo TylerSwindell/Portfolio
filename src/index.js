@@ -1,32 +1,14 @@
 "use-strict";
-import { toggleNav } from "./supportFunctions.js";
 import { renderProjectSection } from "./sections/projects.js";
-
-// Query Selectors
-const navButton = document.querySelector(".hamburger-icon");
-const exitButton = document.querySelector(".exit-icon");
-const mainNavLinks = document.querySelectorAll("#main-navigation>ul>li");
-
-// Event Listeners
-navButton.addEventListener("click", toggleNav);
-exitButton.addEventListener("click", toggleNav);
-mainNavLinks.forEach((item) => item.addEventListener("click", toggleNav));
-
-// Keydown events on site
-document.addEventListener("keydown", (e) => {
-  switch (e.key) {
-    case "Escape":
-      toggleNav();
-      break;
-    default:
-      console.log(e);
-      break;
-  }
-});
+import initializeEventListeners from "./eventListeners.js";
+import { devLog } from "./supportFunctions.js";
+import initializeSlideshow from "./slideshow.js";
 
 // Main Function
 (() => {
-  renderProjectSection();
+  initializeEventListeners();
+  initializeSlideshow();
+  //renderProjectSection();
 })();
 
-console.log("Script Loaded");
+devLog("Script Loaded");
