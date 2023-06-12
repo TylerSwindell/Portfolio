@@ -25,8 +25,11 @@ Designed in Abode XD and built using HTML, CSS, and Javascript to showcase
 
 ## To-Dos
 
-- ~~Add hover effects to sections~~ | 5/31/23
-- ~~Add social icons in header~~ | 6/01/23
-- ~~Add Landscape support~~ | 6/01/23
-- ~~Add script to insert project items from config~~ | 06/02/23
-- Add config for nav links
+- ~~Add hover effects to sections (CSS)~~ | 5/31/23
+- ~~Add social icons in header (HTML/CSS)~~ | 6/01/23
+- ~~Add Landscape support (CSS)~~ | 6/01/23
+- ~~Add script to insert project items from config (JS)~~ | 06/02/23
+- Add config for nav links (JS)
+- Refactor HTML / CSS on section elements
+  - structure of sections (HTML)
+  - use grid to make a simple to use template system (CSS)
