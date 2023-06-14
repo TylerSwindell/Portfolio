@@ -174,7 +174,7 @@
     background-color: var(--lighter-color);
     box-shadow: var(--backdrop);
     border-radius: 10px;
-    height: 75%;
+    height: 100%;
     transition: all 0.25s ease-in-out;
   }
 
